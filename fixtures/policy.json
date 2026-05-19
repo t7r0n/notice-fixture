@@ -1,0 +1,18 @@
+{
+  "company": "Warp",
+  "repo": "notice-fixture",
+  "metrics": [
+    "central_coverage",
+    "claim_risk",
+    "agents_precision",
+    "registrations_latency"
+  ],
+  "failure_modes": [
+    "central_drift",
+    "claim_gap",
+    "agents_misroute",
+    "registrations_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}

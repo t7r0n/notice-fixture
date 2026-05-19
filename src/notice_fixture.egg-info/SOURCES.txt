@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/notice_fixture/__init__.py
+src/notice_fixture/cli.py
+src/notice_fixture/core.py
+src/notice_fixture.egg-info/PKG-INFO
+src/notice_fixture.egg-info/SOURCES.txt
+src/notice_fixture.egg-info/dependency_links.txt
+src/notice_fixture.egg-info/entry_points.txt
+src/notice_fixture.egg-info/top_level.txt
+tests/test_workflow.py
