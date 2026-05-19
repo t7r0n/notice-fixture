@@ -1,2 +1,0 @@
-[console_scripts]
-notice-fixture = notice_fixture.cli:main
