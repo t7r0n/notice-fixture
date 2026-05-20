@@ -25,8 +25,8 @@
     "filing",
     "error",
     "thing",
-    "public",
-    "surface"
+    "surface",
+    "publish"
   ],
   "metrics": [
     "central_coverage",
@@ -39,6 +39,28 @@
     "claim_gap",
     "agents_misroute",
     "registrations_blindspot"
+  ],
+  "archetypes": [
+    {
+      "name": "central evidence replay",
+      "trigger": "central signal changes while claim context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "claim boundary probe",
+      "trigger": "claim handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "agents regression harness",
+      "trigger": "agents behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "registrations operator packet",
+      "trigger": "registrations output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
   ],
   "sources": [
     "https://www.warp.co/a",

@@ -1,0 +1,67 @@
+{
+  "repo": "notice-fixture",
+  "company": "Warp",
+  "rubric_axes": [
+    {
+      "axis": "central_coverage",
+      "failures": [
+        "central_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "claim_risk",
+      "failures": [
+        "claim_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "agents_precision",
+      "failures": [
+        "agents_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "registrations_latency",
+      "failures": [
+        "registrations_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "central evidence replay",
+      "trigger": "central signal changes while claim context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "claim boundary probe",
+      "trigger": "claim handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "agents regression harness",
+      "trigger": "agents behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "registrations operator packet",
+      "trigger": "registrations output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.warp.co/a",
+    "https://www.ycombinator.com/companies/warp",
+    "https://www.joinwarp.com/blog/warp-yc",
+    "https://www.warp.co/careers",
+    "https://www.builtinnyc.com/company/warp-joinwarpcom/jobs",
+    "https://www.checkhq.com/partners/warp",
+    "https://www.dhrmap.com/news/new-york-based-warp-raises-18m-series-a-to-build-ai-driven-payroll-and-compliance-platform-for-startups",
+    "https://www.linkedin.com/in/ayushsharma01/",
+    "https://www.crunchbase.com/person/ayush-sharma-8e1a"
+  ]
+}
