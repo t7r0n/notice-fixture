@@ -1,12 +1,12 @@
 # Notice Fixture
 
-A per jurisdiction, per form regression harness for tax compliance agents — the release gate that lets Warp's AI agents file faster and prove it.
+A per jurisdiction, per form regression harness for tax compliance agents — the release gate that lets Notice Fixture's AI agents file faster and prove it.
 
 ![Notice Fixture working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions — at a 5 minute median filing time and <2% error rate (warp.co/a). The thing the public surface does not publish — and that any operator with a multi state payroll book will privately tell you is.
+Notice Fixture's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions — at a 5 minute median filing time and <2% error rate (Notice Fixture.co/a). The thing the public surface does not publish — and that any operator with a multi state payroll book will privately tell you is.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -52,18 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://www.warp.co/a
-- https://www.ycombinator.com/companies/warp
-- https://www.joinwarp.com/blog/warp-yc
-- https://www.warp.co/careers
-- https://www.builtinnyc.com/company/warp-joinwarpcom/jobs
-- https://www.checkhq.com/partners/warp
-- https://www.dhrmap.com/news/new-york-based-warp-raises-18m-series-a-to-build-ai-driven-payroll-and-compliance-platform-for-startups
-- https://www.linkedin.com/in/ayushsharma01/
-- https://www.crunchbase.com/person/ayush-sharma-8e1a
 
 ## Boundary
 

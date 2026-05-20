@@ -1,7 +1,7 @@
 [project]
 name = "notice-fixture"
 version = "0.1.0"
-description = "A per jurisdiction, per form regression harness for tax compliance agents - the release gate that lets Warp's AI agents file faster and prov"
+description = "A per jurisdiction, per form regression harness for tax compliance agents - the release gate that lets Notice Fixture's "
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
