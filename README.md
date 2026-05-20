@@ -2,19 +2,39 @@
 
 A per jurisdiction, per form regression harness for tax compliance agents - the release gate that lets Warp's AI agents file faster and prove it.
 
-## Why This Exists
+![Notice Fixture working dashboard](outputs/project_working.svg)
 
-Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions - at a 5 minute median filing time and <2% error rate (warp.co/a). The thing the public surface does not publish - and that any operator with a multi state payroll book will privately tell you is the actual constraint - is a trustworthy, auditable evaluation harness for those agents.
+## Why it exists
 
-## What It Builds
+Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions - at a 5 minute median filing time and <2% error rate (warp.co/a).
 
-- Replays synthetic `central` and `claim` cases against the project's evidence rules.
-- Scores `central_coverage`, `claim_risk`, and `agents_precision` so regressions are visible in CSV and JSON.
-- Plants `central drift` and `claim gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `notice-fixture` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around central, claim, and agents.
+- Company-specific strategy code in `src/notice_fixture/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Notice Fixture evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `central coverage`
+- `claim risk`
+- `agents precision`
+- `registrations latency`
+
+## Failure modes it plants
+
+- central drift
+- claim gap
+- agents misroute
+- registrations blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -49,4 +67,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
