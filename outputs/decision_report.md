@@ -1,6 +1,6 @@
 # Decision Report: Notice Fixture
 
-A per jurisdiction, per form regression harness for tax compliance agents - the release gate that lets Warp's AI agents file faster and prove it.
+A per jurisdiction, per form regression harness for tax compliance agents — the release gate that lets Warp's AI agents file faster and prove it.
 
 ## Evidence-Grounded Findings
 

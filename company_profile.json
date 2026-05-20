@@ -5,8 +5,8 @@
   "package": "notice_fixture",
   "cli": "notice-fixture",
   "title": "Notice Fixture",
-  "problem": "Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions - at a 5 minute median filing time and <2% error rate (warp.co/a). The thing the public surface does not publish - and that any operator with a multi state payroll book will privately tell you is the actual constraint - is a trustworthy, auditable evaluation harness for those agents.",
-  "direction": "A per jurisdiction, per form regression harness for tax compliance agents - the release gate that lets Warp's AI agents file faster and prove it.",
+  "problem": "Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions \u2014 at a 5 minute median filing time and <2% error rate (warp.co/a). The thing the public surface does not publish \u2014 and that any operator with a multi state payroll book will privately tell you is the actual constraint \u2014 is a trustworthy, auditable evaluation harness for those agents.",
+  "direction": "A per jurisdiction, per form regression harness for tax compliance agents \u2014 the release gate that lets Warp's AI agents file faster and prove it.",
   "why": "<2% error rate, 5 min filing (warp.co/a) is a target you can continuously verify with this artifact - and that's the kind of thing a Sound Ventures board member loves.",
   "terms": [
     "central",

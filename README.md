@@ -1,22 +1,22 @@
 # Notice Fixture
 
-A per jurisdiction, per form regression harness for tax compliance agents - the release gate that lets Warp's AI agents file faster and prove it.
+A per jurisdiction, per form regression harness for tax compliance agents — the release gate that lets Warp's AI agents file faster and prove it.
 
 ![Notice Fixture working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions - at a 5 minute median filing time and <2% error rate (warp.co/a).
+Warp's central claim is that AI agents file tax registrations, set up UI/SUTA, resolve tax notices, and handle quarterly filings across 10,000+ jurisdictions — at a 5 minute median filing time and <2% error rate (warp.co/a). The thing the public surface does not publish — and that any operator with a multi state payroll book will privately tell you is.
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around central, claim, and agents.
-- Company-specific strategy code in `src/notice_fixture/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/notice_fixture/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Notice Fixture evidence map](outputs/evidence_map.svg)
 
